@@ -7,13 +7,13 @@ deployment:
     branch: develop
     commands:
       - .circle-ci/package.sh develop
-#      - ./deploy_to_develop.sh
+      - .circle-ci/deploy_to_develop.sh
   master:
     branch: master
     commands:
       - .circle-ci/package.sh latest
-#      - ./deploy_to_stage.sh
+      - .circle-ci/deploy_to_stage.sh
   release:
     tag: /v.*/
     commands:
-#      - ./deploy_to_prod.sh
+      - .circle-ci/deploy_to_prod.sh
