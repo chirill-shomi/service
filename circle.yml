@@ -6,9 +6,9 @@ general:
   artifacts:
     - "node_modules" # relative to the build directory
 
-#dependencies:
-#  override:
-#    - npm update
+dependencies:
+  override:
+    - npm update
 
 deployment:
   develop:
