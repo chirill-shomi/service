@@ -1,0 +1,19 @@
+machine:
+  node:
+    version: 5.7.0
+
+deployment:
+  develop:
+    branch: develop
+    commands:
+      - .circle-ci/package.sh develop
+#      - ./deploy_to_develop.sh
+  master:
+    branch: master
+    commands:
+      - .circle-ci/package.sh latest
+#      - ./deploy_to_stage.sh
+  release:
+    tag: /v.*/
+    commands:
+#      - ./deploy_to_prod.sh
