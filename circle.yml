@@ -8,7 +8,6 @@ general:
 
 dependencies:
   override:
-    - npm -v
     - npm update
 
 deployment:
